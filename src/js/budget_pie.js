@@ -12,12 +12,12 @@ function drawChart() {
     ]);
 
     var options = {
-        title: 'งบประมาณแบ่งตามกระทรวง',
+        title: 'งบประมาณแบ่งตามจังหวัด',
         pieHole: 0.5
     };
 
     data.sort([{ column: 1 }]);
 
-    var chart = new google.visualization.PieChart(document.getElementById('ministry_pie'));
+    var chart = new google.visualization.PieChart(document.getElementById('budget_pie'));
     chart.draw(data, options);
 }
